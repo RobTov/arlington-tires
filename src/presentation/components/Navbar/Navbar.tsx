@@ -114,7 +114,11 @@ export const Navbar: React.FC<NavbarProps> = ({ isScrolled, isMobileMenuOpen, se
 
       <motion.div
         initial={false}
-        animate={{ height: isMobileMenuOpen ? 'auto' : 0 }}
+        animate={{ 
+          maxHeight: isMobileMenuOpen ? 500 : 0,
+          opacity: isMobileMenuOpen ? 1 : 0
+        }}
+        transition={{ duration: 0.3 }}
         className="lg:hidden overflow-hidden bg-white shadow-lg"
       >
         <div className="px-4 py-4 space-y-3">
