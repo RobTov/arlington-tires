@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://RobTov.github.io/arlington-tires",
+  "homepage": "https://robtov.github.io/arlington-tires/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
